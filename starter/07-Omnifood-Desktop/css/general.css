@@ -29,7 +29,7 @@ Primary: #e67e22
 Tint: #343a40  #fdf2e9 #fae5d3
 Shades: #cf711f
 Accents:
-Greys: #555
+Greys: #555 #6f6f6f (lightest grey allowed on #e67e22)
 #333
 
 Shaodws
@@ -105,6 +105,9 @@ body {
     row-gap: 9.6rem;
     column-gap: 6.4rem;
 }
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
 
 .grid--2-cols {
     grid-template-columns: repeat(2, 1fr);
@@ -112,6 +115,10 @@ body {
 
 .grid--3-cols {
     grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .grid--center-v {
@@ -177,3 +184,24 @@ body {
 strong {
     font-weight: 500;
 }
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+}
+
