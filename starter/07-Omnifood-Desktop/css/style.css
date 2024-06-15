@@ -66,7 +66,6 @@
     grid-template-columns: 1fr 1fr;
     align-items:center;
     gap: 9.6rem;
-    
 }
 
 .hero img {
@@ -204,7 +203,7 @@
 }
 
 /* ********************* */
-/* How It Works Section */
+/* Meals Section */
 /* ********************* */
 
 .section-meals {
@@ -262,6 +261,10 @@
     margin-bottom: 3.2rem;
 }
 
+.meal-img {
+    width: 100%;
+}
+
 .meal-attributes {
     list-style: none;
     display: flex;
@@ -276,9 +279,6 @@
     gap: 1.6rem;
 }
 
-.meal-img {
-    width: 100%;
-}
 
 .meal-icon {
     height: 2.4rem;
