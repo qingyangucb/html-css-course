@@ -26,13 +26,14 @@ Paragraph default: 1.6
 
 -- 02 Colors
 Primary: #e67e22
-Tint: #343a40  #fdf2e9 #fae5d3
+Tint: #343a40  #fdf2e9 #fae5d3 #eb984e
 Shades: #cf711f
 Accents:
 Greys: #555 #6f6f6f (lightest grey allowed on #e67e22)
 #333
 
 Shaodws
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 Border Radius
 default: 9px
