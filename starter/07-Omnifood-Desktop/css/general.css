@@ -47,6 +47,7 @@ Medium: 11px */
 }
 
 html {
+    /* default is %16 */
     font-size: 62.5%;
 }
 
