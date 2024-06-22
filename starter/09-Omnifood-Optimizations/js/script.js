@@ -1,3 +1,41 @@
+// const h1 = document.querySelector(".heading-primary");
+// console.log(h1);
+// h1.addEventListener("click", function () {
+//   h1.style.backgroundColor = "red";
+//   h1.style.padding = "5rem";
+//   h1.textContent = "I am clicked";
+// });
+const yearEl = document.querySelector(".year");
+yearEl.textContent = new Date().getFullYear();
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+const allLinks = document.querySelectorAll("a:link");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else if (href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    if (link.classList.contains("main-nav-link")) {
+      headerEl.classList.toggle("nav-open");
+    }
+  });
+});
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
